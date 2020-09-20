@@ -23,8 +23,11 @@
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
 function findElement(arr, value) {
-   throw new Error('Not implemented');
-}
+   if (arr.includes(value)){
+   return arr.indexOf(value);
+}else{
+   return -1
+}}
 
 /**
  * Generates an array of odd numbers of the specified length
