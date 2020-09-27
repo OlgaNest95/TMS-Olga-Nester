@@ -23,8 +23,11 @@
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
 function findElement(arr, value) {
-   throw new Error('Not implemented');
-}
+   if (arr.includes(value)){
+   return arr.indexOf(value);
+}else{
+   return -1
+}}
 
 /**
  * Generates an array of odd numbers of the specified length
@@ -38,7 +41,12 @@ function findElement(arr, value) {
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
 function generateOdds(len) {
-   throw new Error('Not implemented');
+   let array = []
+   for(let i=0;array.length<len;i++){
+   i+=1
+   array.push(i)   
+   };
+   return array;
 }
 
 
@@ -54,7 +62,7 @@ function generateOdds(len) {
  *    [] => [] 
  */
 function doubleArray(arr) {
-   throw new Error('Not implemented');
+  return arr.concat(arr)
 }
 
 
@@ -70,7 +78,7 @@ function doubleArray(arr) {
  *    [] => [] 
  */
 function getArrayOfPositives(arr) {
-   throw new Error('Not implemented');
+   return arr.filter(item=>item>0)
 }
 
 /**
