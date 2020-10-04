@@ -12,7 +12,7 @@ describe('Destructure objects', () => {
   describe('nested', () => {
     it('multiple objects', () => {
       const magic = {first: 23, second: 42};
-      const {second} = magic;
+      const {magic: {second}} = {magic};
       assert.equal(second, 42);
     });
     it('object and array', () => {
@@ -30,7 +30,7 @@ describe('Destructure objects', () => {
       assert.equal(z, void 0);
     });
     it('destructure from builtins (string)', () => {
-      const {substr} = String.prototype;
+      const {substr} = '1'
       assert.equal(substr, String.prototype.substr);
     });
   });
