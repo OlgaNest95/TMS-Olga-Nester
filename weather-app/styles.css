@@ -60,3 +60,12 @@ input.input {
 input:focus {
     outline: none;
 }
+#map{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
